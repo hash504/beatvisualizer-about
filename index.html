@@ -10,21 +10,97 @@
             background-color: rgb(25, 25, 25);
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color:white;
-            text-align: center;
-            font-size: 48px;
             font-family: sans-serif;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
             font-style: italic;
         }
         h2 {
+            font-size: 32px;
+            text-align: center;
+            line-height: 0.8;
+        }
+        h3 {
+            text-align: center;
             font-size: 24px;
+            color:rgb(200, 200, 200);
+            margin-top: -20px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+        }
+
+        h2.Link {
+            margin-top: -20px;
+            margin-bottom: 25px;
+        }
+        
+        img {
+            border: 5px solid rgb(125, 125, 125);
+            width: 75%;
+            display: block;
+            margin: auto;
+        }
+
+        .Italics {
+            font-style: italic;
+        }
+
+        .Details {
+            width: 60%;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
 <body>
     <h1>About</h1>
-    <h2>WIP.</h2>
-    <h2><a href="https://hash504.github.io/beatvisualizer/">Back to main page</a></h2>
+    <h2 class="Link"><a href="https://hash504.github.io/beatvisualizer/">Back to main page</a></h2>
+    <div>
+        <img src="websitedetails.png" alt="Image of website"/>
+    </div>
+    <div class="Details">
+        <h2>1. YouTube Search Bar</h2>
+            <h3>
+                Insert a YouTube URL and press the <a class="Italics">Add</a> button to add to the Video Player.<br>
+                Example: <a class="Italics">https://www.youtube.com/watch?v=Djrl6fu8myo</a>
+            </h3>
+        <h2>2. Video Player</h2>
+            <h3>
+                Where the YouTube video will appear.
+            </h3>
+        <h2>3. Video Player Controls</h2>
+            <h3>
+                The <a class="Italics">Play</a> Button on the left will play the video and start the metronome.<br>
+                The <a class="Italics">Stop</a> Button on the right will stop the video and the metronome.
+            </h3>
+        <h2>4. Metronome</h2>
+            <h3>
+                When started, the metronome's circles will be filled in one at a time, and a sound will play.<br>
+                The first beat will play a higher pitched sound than the others.
+            </h3>
+        <h2>5. BPM Box</h2>
+            <h3>
+                Inserting a number and then pressing <a class="Italics">Set</a> will set the BPM of the metronome.<br>
+                The default BPM is 120.<br>
+                There is no limit to how high you can set the BPM, so be careful!
+            </h3>
+        <h2>6. Start Point Box</h2>
+            <h3>
+                Inserting a number and then pressing <a class="Italics">Set</a> will set where the video starts when you start the metronome.<br>
+                The default starting point is at 0 seconds.
+            </h3>
+        <h2>7. Spotify Search Bar</h2>
+            <h3>
+                Inserting a term and then pressing the <a class="Italics">Search</a> button will search Spotify.<br>
+                The first five results are displayed, displaying the song title, artist, and BPM.<br>
+                You can also search by song artist.<br>
+                You can not add results from the Spotify search bar to the Video Player.
+            </h3>
+        <h2 class="Link"><a href="#top">Back to top</a></h3>
+    </div>
 </body>
 </html>
